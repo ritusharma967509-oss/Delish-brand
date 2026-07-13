@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delish </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="biscuits">
+            <h2>Delish Bakery</h2>
+        </div>
+        <nav> 
+            <a href="#">Home</a>
+            <a href="#menu">Product</a>
+                        <a href="#cart">Cart</a>
+            <a href="#contact">Contact</a>
+        </nav>
+                 
+    </header>
+                <!-- hero  section-->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Where taste takes the center stage</h1>
+            <p> delish bring premium biscuits made with
+                finest ingredeints and baked to perfection.
+                Enjoy the perfect bite.every time
+            </p>
+            <button id="shopNow">Shop Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="delish.png" alt="delish">
+        </div>
+    </section>
+             <!-- search -->
+    <section class="search-section">
+        <input type="text" id="search" placeholder="Search your favourite  biscuits....">
+    </section>
+              <!-- category -->
+    <section class="category">
+
+     <button class="filterBtn" data-category="all">All</button>
+        <button class="filterBtn" data-category="cookies">Cookies</button>
+         <button class="filterBtn" data-category="creambiscuits">Cream Biscuits</button>
+          <button class="filterBtn" data-category="butterbiscuits">Butter Biscuits</button>
+           <button class="filterBtn" data-category="chocobiscuits">Chocolate Biscuits</button>
+           
+        <button class="filterBtn" data-category="giftpack">Gift Packs</button>
+         </section>
+         <section id="menu" class="menu">
+
+            <h2>Our products</h2>
+            <div class="biscuit-container">
+                            <!-- card 1 -->
+
+                 <div class="card" data-category="cookies" data-price="₹120">
+                    <img src="cookies.png">
+                    <h3>Cookies</h3>
+                    <p>Cripsy,crunchy and irresistible cookies</p>
+                    <h4>₹120</h4>
+                    <button class="addcart">Add to Cart</button>
+                 </div>
+
+
+                   <!-- card 2 -->
+              <div class="card" data-category="creambiscuits" data-price="₹150">
+                <img src="creambiscuits.png">
+                <h3>Cream Biscuits</h3>
+                <p>Smooth & creamy sandwhich biscuits</p>
+                <h4>₹150</h4>
+                <button class="addcart">Add to Cart</button>
+              </div>
+
+                  <!-- card 3 -->
+
+                   <div class="card" data-category="butterbiscuits" data-price="₹180">
+                    <img src="butterbiscuits.png">
+                    <h3>Butter Biscuits</h3>
+                    <p>Rich buttery taste in every bite</p>
+                     <h4>₹180</h4>
+                    <button class="addcart">Add to Cart</button>
+                     
+                    
+                   </div>
+
+                   <!-- card 4 -->
+
+                    <div class="card" data-category="chocobiscuits" data-price="₹200">
+                        <img src="chocobiscuits.png">
+                        <h3>Chocolate Biscuits</h3>
+                        <p>Choco delight for chocolate lovers</p>
+                        <h4>₹200</h4>
+                        <button class="addcart">Add to Cart</button>
+                    </div>
+
+                      <!-- card 5 -->
+
+                       <div class="card" data-category="giftpack" data-price="₹350">
+                        <img src="giftpack.png">
+                        <h3>Gift Packs</h3>
+                        <p>Perfect gift for your loved ones</p>
+                        <h4>₹350</h4>
+                        <button class="addcart">Add to Cart</button>
+                       </div>
+            </div>
+         </section>
+         <!-- cart -->
+       <section id="cart" class="cart">
+
+    <h2>Shopping Cart</h2>
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty
+        </p>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3>Total : ₹<span id="total">0</span></h3>
+
+    </div>
+
+</section>
+    <!-- customer details -->
+     <section class="customer">
+        <h2>Customer</h2>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="number" id="phone" placeholder="Phone Number">
+        <textarea id="address" placeholder="Delivery Address"></textarea>
+        <select>
+            <option>Cash on delivery</option>
+            <option>UPI</option>
+            <option>Credit Card</option>
+        </select>
+        <button id="orderBtn">Place Order</button>
+     </section>
+    <!-- order status -->
+     <section class="status">
+        <h2>Order Status</h2>
+        <div class="progress">
+            <div class="step active">Order Received</div>
+            <div class="step">Preparing</div>
+            <div  class="step">Out of Delivery</div>
+            <div class="step">Delivered</div>
+        </div>
+     </section>
+     <!-- footer -->
+      <footer id="contact">
+
+        <h2>Delish</h2>
+
+        <p>Email : support@delish.com</p>
+
+        <p>Phone : +91 9876543210</p>
+
+        <p>© 2026 All Rights Reserved.</p>
+
+    </footer>
+<script src="script.js">
+    
+</script>
+</body>
+</html>

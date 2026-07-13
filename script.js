@@ -154,14 +154,12 @@ const orderBtn = document.getElementById("orderBtn");
 orderBtn.addEventListener("click", function () {
 
     const name = document.getElementById("name").value.trim();
-
     const phone = document.getElementById("phone").value.trim();
-
     const address = document.getElementById("address").value.trim();
 
     if (name === "" || phone === "" || address === "") {
 
-        alert("Please fill all customer details.");
+        alert("Please fill in all customer details.");
 
         return;
 
@@ -169,13 +167,13 @@ orderBtn.addEventListener("click", function () {
 
     if (cartItems.children.length === 0 || document.querySelector(".empty-cart")) {
 
-        alert("Your cart is empty.");
+        alert("Your cart is empty. Please add at least one product.");
 
         return;
 
     }
 
-    alert("🎉 Order Placed Successfully!");
+    alert("✅ Thank you! Your order has been received and is now being prepared.");
 
 });
 // =========================
@@ -218,8 +216,10 @@ orderBtn.addEventListener("click", function () {
 
     setTimeout(() => {
 
-        steps[3].classList.add("active");
+    steps[3].classList.add("active");
 
-    }, 6000);
+    alert("🎉 Your order has been delivered successfully!\n\nThank you for shopping with Delish Bakery.");
+
+}, 6000);
 
 });
